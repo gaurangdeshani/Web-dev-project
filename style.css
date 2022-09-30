@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(220, 192, 241);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    height: 65px;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    float: left;
+    min-height: 60vh;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    color: rgb(247, 247, 247);
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+   margin: 23px 5px ;
+   width: 27%;
+   border-radius: 12px;
+   padding: 34px;
+}
+.container1{
+    float: left;
+    min-height: 60vh;
+    background-image: url(bg2.jpeg) ;
+    background-size: cover;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px 30px;
+   width: 27%;
+   border-radius: 12px;
+   padding: 34px;
+}
+
+.container2{
+   background-image: url(bg3.jpg);
+   background-size: cover;
+   min-height: 60vh;
+   background-color: rgb(113, 131, 230);
+   color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px 55px;
+   width: 27%;
+   border-radius: 12px;
+   padding: 34px;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 50px;   /*this ig given to add margin in top of our lists of song*/
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: auto;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;  /* ppicture of image goes out hence we use ".song item img"*/
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 53px;
+    margin: 0 23px;
+    border-radius: 34px;
+    height: 30px;
+}
+
+.timestamp{      /*to give margin to 5:30 and its fonts play button*/
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;   /*if we donot do this then name will be come in between and gif in beteen*/
+    left: 10vw;   /*without this it will be left most*/
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: rgb(245, 242, 238);
+    }
+  }
+
